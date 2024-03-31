@@ -1,0 +1,25 @@
+title: (string) The title of the story or video.
+description: (string) A brief description or summary of the story.
+
+characters:
+  - name: (string) The name of the character.
+    description: (string) A description of the character, including their appearance, personality, or role in the story.
+  - ... (additional characters can be added using the same structure)
+
+setting:
+  location: (string) The primary location or setting where the story takes place.
+  time: (string) The time or timeframe in which the story is set.
+  description: (string) A description of the setting, providing context, mood, or atmosphere.
+
+scenes:
+  - number: (integer) The scene number, indicating the order of the scenes.
+    location: (string) The specific location where the scene takes place.
+    description: (string) A description of what happens in the scene or the main actions taking place.
+    dialogue:
+      - character: (string) The name of the character speaking the dialogue.
+        text: (string) The actual dialogue text spoken by the character.
+      - ... (additional dialogue lines can be added using the same structure)
+    stage_directions:
+      - (string) A stage direction describing actions, movements, or scene setup.
+      - ... (additional stage directions can be added as needed)
+  - ... (additional scenes can be added using the same structure)
